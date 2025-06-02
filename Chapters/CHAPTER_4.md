@@ -126,3 +126,10 @@ function Tree_Search(problem, strategy) returns a solution or failure
 - Discovery sequence: Arad (root) $\rightarrow$ Sibiu (FIFO)
 - After discovering Sibiu, the path to the goal state is found: 
 	- Arad $\rightarrow$ Sibiu $\rightarrow$ Fagaras $\rightarrow$ Bucharest. 
+
+![[search_agent_frontier.PNG]]
+
+- The **frontier** separates two regions of the state-space graph: 
+	- An interior region where every state has been expanded. 
+	- An exterior region of states that have not yet been reached. 
+![[frontier_space.PNG]]

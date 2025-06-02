@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9dd87f6ece6ac91f",
+            "id": "5eeefce07ec183c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/CHAPTER_4.md",
+                "file": "Chapters/CHAPTER_5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CHAPTER_4"
+              "title": "CHAPTER_5"
             }
           }
         ]
@@ -168,27 +168,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9dd87f6ece6ac91f",
+  "active": "12320dff4343ed76",
   "lastOpenFiles": [
-    "Pasted image 20250528220326.png",
-    "Chapters/CHAPTER_4.md",
-    "Images/search_agent_tree.PNG",
-    "Images/search_8_puzzle.PNG",
-    "Images/search_vacuum.PNG",
-    "Images/search_prob_ex.PNG",
-    "Images/search_agent_map.PNG",
-    "COMP472 NOTES.md",
+    "Images/redundancy_img.PNG",
+    "Images/USA_summary.PNG",
+    "Images/search_IDS/ids_4.PNG",
+    "Images/search_IDS/ids_3.PNG",
+    "Images/search_IDS/ids_2.PNG",
+    "Images/search_IDS/ids_1.PNG",
+    "Images/search_IDS",
+    "Images/New folder",
+    "Images/search_DFS/dfs_final.PNG",
+    "Images/search_DFS/dfs_5.PNG",
+    "Images/search_DFS/dfs_4.PNG",
+    "Images/search_DFS/dfs_3.PNG",
+    "Images/search_DFS/dfs_2.PNG",
+    "Images/search_DFS",
     "Chapters/CHAPTER_1.md",
-    "Untitled.md",
-    "Chapters/CHAPTER_3.md",
     "Chapters/CHAPTER_2.md",
-    "Images/decision_tree.png",
-    "Images/util_based_agents.png",
+    "Chapters/CHAPTER_3.md",
+    "Chapters/CHAPTER_4.md",
+    "Chapters/CHAPTER_5.md",
+    "COMP472 PROJECT 1 DOCUMENTATION.md",
+    "Images/search_BFS",
+    "COMP472 NOTES.md",
     "Chapters",
     "Images",
     "New folder",
-    "Pasted image 20250526182602.png",
-    "Pasted image 20250526181316.png",
     "Untitled.canvas"
   ]
 }
