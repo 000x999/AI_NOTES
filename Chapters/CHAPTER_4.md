@@ -36,7 +36,7 @@ Find a solution:
 		- Ex: $ACTIONS(Arad) = \space \{ToSibiu, ToTimisoara, ToZerind\}$
 	- 5: **A transition model**, which describes what each action does. $RESULT(s,a)$ returns the sate that results from doing action $a$ in state $s$. 
 		- Ex: $RESULT(Arad, ToZerind) = \space Zerind$
-	- 6: **An action cost function**, denoted by $ACTION_COST(s,a,s')$ that gives the numeric cost of applying action $a$ in a state $s$ to reach state $s'$. 
+	- 6: **An action cost function**, denoted by $ACTION\_COST(s,a,s')$ that gives the numeric cost of applying action $a$ in a state $s$ to reach state $s'$. 
 		- A problem solving agent should use a cost function that **reflects its own performance measure**. 
 		- Ex: For route-finding agents, the cost of an action might be the length of the route in miles, or it might be the time it takes to complete the action itself. 
 

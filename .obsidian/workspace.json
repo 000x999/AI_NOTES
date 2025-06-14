@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2ccf8c92693c71ff",
+        "id": "f9b2821f5ef32d43",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/CHAPTER_5.md",
+                "file": "COMP472 NOTES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CHAPTER_5"
+              "title": "COMP472 NOTES"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CHAPTER_2.md",
+                "file": "Chapters/CHAPTER_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CHAPTER_2"
+              "title": "Backlinks for CHAPTER_1"
             }
           },
           {
@@ -170,28 +170,31 @@
   },
   "active": "12320dff4343ed76",
   "lastOpenFiles": [
+    "QUICK SHEET.md",
+    "COMP472 NOTES.md",
+    "Chapters/CHAPTER_6.md",
+    "7_NN_chapter21_4e__2025.pdf",
+    "Images/generalization.PNG",
+    "Images/ff3_netg.PNG",
+    "Images/ff_net.PNG",
+    "Images/ff_net'.PNG",
+    "Images/neuron_img.PNG",
+    "Chapters/CHAPTER_5.md",
+    "Chapters/CHAPTER_1.md",
+    "Chapters/CHAPTER_4.md",
+    "Chapters/CHAPTER_3.md",
+    "Chapters/CHAPTER_2.md",
+    "CHAPTER_5.md",
     "Images/redundancy_img.PNG",
     "Images/USA_summary.PNG",
     "Images/search_IDS/ids_4.PNG",
     "Images/search_IDS/ids_3.PNG",
     "Images/search_IDS/ids_2.PNG",
-    "Images/search_IDS/ids_1.PNG",
     "Images/search_IDS",
     "Images/New folder",
-    "Images/search_DFS/dfs_final.PNG",
-    "Images/search_DFS/dfs_5.PNG",
-    "Images/search_DFS/dfs_4.PNG",
-    "Images/search_DFS/dfs_3.PNG",
-    "Images/search_DFS/dfs_2.PNG",
     "Images/search_DFS",
-    "Chapters/CHAPTER_1.md",
-    "Chapters/CHAPTER_2.md",
-    "Chapters/CHAPTER_3.md",
-    "Chapters/CHAPTER_4.md",
-    "Chapters/CHAPTER_5.md",
     "COMP472 PROJECT 1 DOCUMENTATION.md",
     "Images/search_BFS",
-    "COMP472 NOTES.md",
     "Chapters",
     "Images",
     "New folder",

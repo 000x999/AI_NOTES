@@ -1,3 +1,7 @@
 {
-  "cssTheme": "Solarized"
+  "cssTheme": "RetroOS 98",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "dark_mode"
+  ]
 }
