@@ -36,7 +36,7 @@
 - This formula is most often used to select the most probable hypothesis according to the observed data. This is achieved by taking into consideration the prior and posterior probabilities as well as their output information.
 - Calculations for these probabilities often involves making assumptions about the probability distribution. 
 # Decision trees 
-- Taking a look at agentic structures would be useful for this part [[CHAPTER_2#Agentic architecture and types]]
+- Taking a look at agentic structures would be useful for this part [[CHAPTER_2_ENVIRONMENT#Agentic architecture and types]]
 - A decision tree is a representation of a function that maps a vector of attribute values to a single output value. 
 - Decision trees reach their decisions by sequentially performing tests starting at the root node and following the appropriate branch until a leaf node is reached. 
 - Each internal node of the tree corresponds to a test value of one of the input attributes. 

@@ -1,5 +1,5 @@
 # Agents and environment 
-- Some more useful information on agents can be found in **[[CHAPTER_1#Rational agents]]**
+- Some more useful information on agents can be found in **[[CHAPTER_1_INTRODUCTION#Rational agents]]**
 - Agents include humans, robots, softbots, thermostats, etc. Agents aren't only used in the context of AI, agents can be anything that can be viewed as perceiving it's environment. Spatial perception can be done through sensors and acting upon it's surroundings and environment through actuators. 
 - More formally, agent definitions include:  
   - Humans, Robots, Softbots, Thermostats, etc.
@@ -7,7 +7,7 @@
 - Interacts with its environment through actuators or any other mechanical medium. - The agent function maps from percept histories to actions:  $f: P^* \rightarrow A$
   - The agent program runs directly on physical devices/architectures to produce $f$
 # Rationality 
-- Some more useful information on **Rationality and Rational thought** can be found in **[[CHAPTER_1#Thinking rationally Laws of Thought]]** 
+- Some more useful information on **Rationality and Rational thought** can be found in **[[CHAPTER_1_INTRODUCTION#Thinking rationally Laws of Thought]]** 
 - Rational agents are ones that do the **right thing**, but what does it mean to do the right thing? Can doing the **right thing** be quantified or made into a set of rules?
 - An easier approach to getting agents that act rationally is through evaluating their behaviors based on their set consequences. This brings us to the notion of **desirability**. Desirability can be captured by a performance measure that evaluates any given environmental sequence. 
 ## Performance measure example: 

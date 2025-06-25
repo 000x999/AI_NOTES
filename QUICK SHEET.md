@@ -1,4 +1,4 @@
-# [[CHAPTER_1]]
+# [[CHAPTER_1_INTRODUCTION]]
 - What is AI ? 
 	- Systems that think like humans 
 	- Systems that think rationally 
@@ -36,7 +36,7 @@
 	- Safety-Critical applications 
 	- Cyber-Sec Threats
 - Gorilla problem: Humans are primates with super-intelligence, thus we reign over all other primates. We need to design AI systems that don't end up taking control over us, the way Turing speculated they might. 
-# [[CHAPTER_2]]
+# [[CHAPTER_2_ENVIRONMENT]]
 - Agents can be humans, robots, thermostats, etc. 
 	- Anything that perceives it's environment
 - Spatial perception through sensors, actions through actuators
@@ -100,7 +100,7 @@
 	- Goal-Based agents
 	- Utility-Based agents (For customer satisfaction)
 	- All these agents can be turned into learning agents
-# [[CHAPTER_3]]
+# [[CHAPTER_3_LEARNING]]
 - There  are 3 mains forms of learning: 
 	- Supervised learning: 
 		- Agent will learn a function from observing input-output pairs 
@@ -180,7 +180,7 @@ function LEARN_DECISION_TREE(examples, attributes, parent_examples) returns a tr
 		- Eliminating nodes that cause noise in the data set
 		- Works by starting with a fully grown decision tree and iteratively removing branches that do not improve its accuracy on a validation data set
 			- We stop once a stopping criterion is met 
-# [[CHAPTER_4]]
+# [[CHAPTER_4_AGENTS_AND_SEARCH_ALGORITHMS]]
 - Problem solving agents: 
 	- Agents that consider a sequence of actions that form a path leading them to a goal state 
 	- Such agents are used when the correct action to take is not immediately available 
@@ -252,7 +252,7 @@ function Tree_Search(problem, strategy) returns a solution or failure
 - A frontier separates a state space graph into two sections: 
 	- An interior section of explored and expanded states
 	- An exterior section of states that have not yet been reached
-# [[CHAPTER_5]]
+# [[CHAPTER_5_TREE_SEARCH_AND_ALGORITHMS]]
 - States vs nodes: 
 	- States are representations of physical configurations
 	- Nodes are data structures that make up part of a search tree, including:

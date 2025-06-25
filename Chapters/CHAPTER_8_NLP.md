@@ -1,0 +1,87 @@
+# Natural Language Processing 
+## Human languages 
+- The complexity and diversity of human languages set humans apart from all other species. 
+- When Alan Turing proposed his test for intelligence, he based it on language due to its universal scope. Since language captures so much intelligent behavior:
+	- A speaker
+	- has the **goal** of communicating some
+	- **Knowledge**, then 
+	- plans some language
+	- that **represents** the knowledge, 
+	- and acts to achieve the goal.
+- The listener (or reader):
+	- **Perceives** the language. 
+	- **Infers** the intended meaning. 
+- This type of communication through language has allowed civilization to grow, it is the main way of passing along cultural, legal, scientific and technological knowledge. 
+- There are **three** primary reasons for computers to do **natural language processing (NLP)**:
+	- To **communicate** with humans. In many situations it is convenient for humans to use speech to interact with computers, its often more convenient to use natural language as opposed to formal language such as first-order predicate calculus. 
+	- To **learn**. Humans have written down a lot of knowledge using natural language. Wikipedia alone has 30 million pages whereas there are hardly any sources of facts like those written in formal logic. 
+	- To **advance the scientific understanding of languages and language use.** Using the tools of AI in conjunction with linguistics, cognitive psychology and neuroscience. 
+## Language models
+- Formal languages such as first-order logic are precisely defines. 
+- A **grammar** defines the syntax of legal sentences. Semantic **rules** define the meaning. 
+- Natural languages such as English cannot be so neatly characterized:
+	- Natural language is **ambiguous**: 
+		- "He saw her duck" can mean either that she owns a waterfowl, or that she made a downwards evasive move. 
+	- Natural language is also **vague**:
+		- "That's great!" does not specify precisely how great something is, nor what the thing is. 
+- The mapping from symbols to objects is not formally defined. In first-order logic, two uses of the symbol "Richard" must refer to the same person, but, in natural language, two occurrences of the same word or phrase may refer to different things in the world. 
+- **Language model**:" A probability distribution describing the likelihood of any string. 
+	- Such a model should say that "Do I dare disturb the universe?" has a reasonable probability as a string of English, but "Universe dare the I disturb do?" is extremely unlikely. 
+	- With a language model, we can predict what words are likely to come next in a text, and thereby suggest completions for an email or text message. 
+	- We can compute which alterations to a text would make it more probably and thereby suggest spelling or grammar corrections. 
+	- With a pair of models, we can compute the most probable translation of a sentence. 
+	- With some example question/answer pairs as training data, we can compute the most likely answer to a question. 
+	- **Language models** are the heart of a broad range of natural language tasks. The language modeling task itself also serves as a common benchmark to measure progress itself in language understanding. 
+- Natural languages are complex, so many language models will, at best, be nothing more than approximations. 
+- The linguist Edward Sapir said "No language is tyrannically consistent. All grammars leak" (Sapir, 1921). 
+- The philosopher Donald Davidson said "There is no such thing as language, not if a language is... a clearly defined shared structure" (Davidson, 1986). This essentially means that there is no **one** definitive language model for English in the way that there is for a programming language. We all have different models, but we still somehow manage to muddle through and communicate effectively. 
+## Acting under uncertainty 
+- Agents in the real world need to handle **uncertainty**, whether it's due to partial observability, nondeterminism or adversaries. 
+- An agent may never know for sure what state it is in now or where it will end up after a sequence of actions. 
+- Some logical agents handle uncertainty by keeping track of a **belief state**. 
+- **A belief state**: Is a representation of the set of all possible world states that it might be in. It generates a contingency plan that handles every possible eventuality that its sensors may report during execution. This approach mainly works on simple problems, but it has its drawbacks. 
+- **Drawbacks:**:
+	- The agent must consider every possible explanation for its sensor observations, no matter how unlikely. This leads to a large belief-state full of unlikely possibilities. 
+	- A correct contingency plan that handles every eventuality can grow arbitrarily large and must consider arbitrarily unlikely contingencies. 
+	- Sometimes, there is no plan that is guaranteed to achieve the goal, yet the agent must act anyways. It must have some way to compare the merits of plans that aren't guaranteed. 
+- Real world problems contain **uncertainties due to:**
+	- Partial observability
+	- Nondeterminism 
+	- Adversaries 
+- Example of a dental diagnosis using propositional logic: $Toothache\implies Cavity$
+- However,  not all patients with toothaches have cavities: $Toothache \implies Cavity \lor GumProblem \lor Abscess ...$
+- In order to make the rule true, we have to add an almost unlimited list of possible problems. The only way to fix the rule is to make it logically exhaustive. 
+- An agent strives to choose the right thing to do, the rational decision depends on both the relative importance of various goals and the likelihood and degree that they will be reached. 
+- Large domains such as medical diagnosis fail to the following three main reasons:
+	- **Laziness**: It is too much work to list the complete set of antecedents or consequents needed to ensure an exception less rule.
+	- **Theoretical ignorance**: Medical science has no complete theory for the domain. 
+	- **Practical ignorance**: Even if we know all the rules, we might be uncertain about a particular patient because not all the necessary test have or can be run. 
+- An agent only has a degree of belief in the relevant sentences. 
+- The connection between toothaches and cavities is not a strict logical consequence in either direction. 
+- This is typical of the medical domain, as well as most other judgmental domains such as: Law, business, design, automobile repair, gardening, dating and so on... 
+- The agent's knowledge can at best, provide only a **degree of belief** in the relevant sentences. 
+- Our main tool for dealing with degrees of belief is **probability theory**. 
+### Probability theory 
+- A probabilistic agent may have a numerical degree of belief between 0 (for certainly false sentences) and 1 (for certainly true sentences). 
+- The theory of probability provides a way of summarizing the uncertainty that comes from our **laziness** and  **ignorance**, thereby solving the qualification problem. 
+- We might not know for sure what afflicts a particular patient, but we believe that there is an $80\%$ chance, a probability of $0.8$ that the patient who has a toothache, has a cavity.
+- That is, we expect that, out of all the situations that are distinguishable from the current situation, the patient will have a cavity in $80\%$ of them. This belief can be derived from statistical data, $80\%$ of the toothache patients seen so far have had cavities, or from some general dental knowledge or a combination of evidence based sources.
+- One confusing point is that at the time of our diagnosis, there is no uncertainty in the actual world: The patient either has a cavity or doesn't.  In that case, what does it mean to say the probability of a cavity is $0.8$?
+  Shouldn't it be either $0$ or $1$? The answer is that the probability statements are **made with respect to a state of knowledge**, not with respect to the real world. 
+- We say "The probability that the patient has a cavity, given that she has a toothache is $0.8$". If we later learn that the patient has a history of gum disease, we can make a different statement: "The probability that the patient has a cavity , given that she has a toothache and a history of gum disease, is $0.4$". 
+- If we gather further conclusive evidence against a cavity, we can say "The probability that the patient has a cavity, given all we now know, is almost $0$."
+- Consider an agent whose task is to plan your trip to the airport to catch a flight: 
+	- Leave 30 mins before flight departure time? 
+	- Leave 2 hours before? 
+	- Leave 24 hours before?
+	- To make such choices, an agent must first have **preferences** among the different possible **outcomes** of the various plans. 
+- An outcome is a completely specified state, including factors such as whether the agent arrives on time and the length of the wait at the airport. 
+### Utility theory
+- We use **utility theory** to represent the preferences and reason quantitatively with them. The term **utility** is used in the sense of "The quality of being useful". 
+- Utility theory says that every state (or state sequence) has a degree of usefulness, or utility, to an agent and that the **agent will prefer states with higher utility**. 
+- The utility of a state is relative to an agent. For example, the utility of a state in which white has checkmated black in a game of chess is obviously high for the agent playing white, but low for the agent playing black. 
+- Preferences as expressed by utilities are combined with probabilities in the general theory of rational decisions called **Decision theory**: 
+- **Decision theory**: $Decision \space theory = \space probability \space theory + utility \space theory$
+- The fundamental idea of decision theory is that an agent is rational if and only if it chooses the action that yields the highest expected utility, averaged over all the possible outcomes of the action. 
+- This is called the principle of **Maximum expected utility** **(MEU)**.
+- Here, "expected" means the "average" or "statistical mean" of the outcome utilities, weighted by the probability of the outcome. 
